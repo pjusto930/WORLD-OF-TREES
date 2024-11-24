@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/juspr/AppData/Local/Temp/18de495a-3138-49b7-89a3-f1f5410e24a0_TAREA_4C-20241027T054807Z-001.zip.4a0/TAREA_4C",
+      "program": "c:/Users/juspr/AppData/Local/Temp/18de495a-3138-49b7-89a3-f1f5410e24a0_TAREA_4C-20241027T054807Z-001.zip.4a0/TAREA_4C/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
