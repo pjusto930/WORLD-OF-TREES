@@ -408,25 +408,6 @@ def create_tires(difficulty):
         tire = Tire(plant_speed, plant_heal)
         tires.add(tire)
 
-# Función para mostrar la pantalla de "Juego Terminado"
-def show_game_over():
-    screen.fill(BLACK)
-    font = pygame.font.Font(None, 74)
-    game_over_text = font.render("¡Buen intento!", True, RED)
-    screen.blit(game_over_text, (WIDTH // 2 - game_over_text.get_width() // 2, HEIGHT // 2 - game_over_text.get_height() // 2))
-    
-    restart_button = font.render("Reiniciar", True, WHITE)
-    menu_button = font.render("Menu", True, WHITE)
-    
-    screen.blit(restart_button, (WIDTH // 2 - restart_button.get_width() // 2, HEIGHT // 2 + 50))
-    screen.blit(menu_button, (WIDTH // 2 - menu_button.get_width() // 2, HEIGHT // 2 + 100))
-    
-    pygame.display.flip()
-    return restart_button.get_rect(topleft=(WIDTH // 2 - restart_button.get_width() // 2, HEIGHT // 2 + 50)), \
-           menu_button.get_rect(topleft=(WIDTH // 2 - menu_button.get_width() // 2, HEIGHT // 2 + 100))
-
-click_sound = pygame.mixer.Sound('click.mp3')
-
 # Funciones para mostrar menús y elementos del juego
 def show_level_selection(back_button_position=(-200, 0)):
     screen.blit(level_background_image, (0, 0))  # Dibuja el fondo común de la selección de niveles
